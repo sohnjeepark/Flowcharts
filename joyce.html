@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>James Joyce Flowchart</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/joyce.css" />
+</head>
+
+<body class="flowchart-page">
+
+  <header class="joyce-header">
+    <a href="../index.html" class="back-link">← Home</a>
+    <h1>James Joyce</h1>
+  </header>
+
+  <main class="joyce-page">
+    <section class="flowchart-title joyce-title">
+      <p class="eyebrow">Reading Flowchart</p>
+      <h2>James Joyce</h2>
+      <p>A visual reading path through Joyce’s major works.</p>
+    </section>
+
+    <section class="joyce-flowchart-wrap">
+      <div class="joyce-flowchart">
+
+        <div class="jf-start">START<br>HERE</div>
+
+        <div class="jf-book jf-dubliners book-detail-trigger" data-book="dubliners">
+          <img src="../images/joyce-dubliners.jpg" alt="">
+          <p>Dubliners</p>
+        </div>
+
+        <div class="jf-book jf-portrait book-detail-trigger" data-book="portrait">
+          <img src="../images/joyce-a-portrait-of-the-artist-as-a-young-man.jpg" alt="">
+          <p>A Portrait of the Artist as a Young Man</p>
+        </div>
+
+        <div class="jf-book jf-ulysses book-detail-trigger" data-book="ulysses">
+          <img src="../images/joyce-ulysses.jpg" alt="">
+          <p>Ulysses</p>
+        </div>
+
+        <div class="jf-book jf-finnegans book-detail-trigger" data-book="finnegans">
+          <img src="../images/joyce-finnegans-wake.jpg" alt="">
+          <p>Finnegans Wake</p>
+        </div>
+
+        <div class="jf-book jf-skeleton book-detail-trigger" data-book="skeleton">
+          <img src="../images/joyce-a-skeleton-key-to-finnegans-wake.jpg" alt="">
+          <p>A Skeleton Key to Finnegans Wake</p>
+        </div>
+
+        <div class="jf-book jf-poems book-detail-trigger" data-book="poems">
+          <img src="../images/joyce-collected-poems-of-james-joyce.jpg" alt="">
+          <p>Collected Poems of James Joyce</p>
+        </div>
+
+        <div class="jf-book jf-exiles book-detail-trigger" data-book="exiles">
+          <img src="../images/joyce-exiles.jpg" alt="">
+          <p>Exiles</p>
+        </div>
+
+        <div class="jf-book jf-cat-devil book-detail-trigger" data-book="cat-devil">
+          <img src="../images/joyce-the-cat-and-the-devil.jpg" alt="">
+          <p>The Cat and the Devil</p>
+        </div>
+
+        <div class="jf-book jf-cats book-detail-trigger" data-book="cats">
+          <img src="../images/joyce-the-cats-of-copenhagen.jpg" alt="">
+          <p>The Cats of Copenhagen</p>
+        </div>
+
+        <div class="jf-book jf-letters book-detail-trigger" data-book="letters">
+          <img src="../images/joyce-letters-of-james-joyce.jpg" alt="">
+          <p>Letters of James Joyce</p>
+        </div>
+
+        
+        <div class="jf-text jf-t2">Want something<br>a bit more difficult?</div>
+        <div class="jf-text jf-t3">Want to explore<br>his poetic side?</div>
+        <div class="jf-text jf-t4">More challenging<br>masterpieces?</div>
+        <div class="jf-text jf-t5">Want to read about<br>Joyce’s exile years?</div>
+        <div class="jf-text jf-t6">Want to read Joyce’s<br>most difficult book?</div>
+        <div class="jf-text jf-t7">Need a guide<br>to understand<br>Finnegans Wake?</div>
+        <div class="jf-text jf-t8">Want more playful<br>side works?</div>
+
+        
+        <div class="jf-line jf-l2 vertical"></div>
+        <div class="jf-line jf-l3 reverse"></div>
+        <div class="jf-line jf-l4 vertical"></div>
+        <div class="jf-line jf-l5 reverse"></div>
+        <div class="jf-line jf-l6 vertical"></div>
+        <div class="jf-line jf-l7"></div>
+
+       
+        <div class="jf-line jf-l9 no-arrow"></div>
+        <div class="jf-line jf-l10 vertical"></div>
+        <div class="jf-line jf-l11 vertical"></div>
+        <div class="jf-line jf-l12 vertical"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="book-detail-overlay" id="bookDetailOverlay">
+  <div class="book-detail-panel" id="bookDetailPanel">
+    <div class="book-detail-image">
+      <img id="detailBookImage" src="" alt="">
+    </div>
+
+    <div class="book-detail-text">
+      <h2 id="detailBookTitle"></h2>
+      <div class="book-detail-meta" id="detailBookMeta"></div>
+      <p id="detailBookDescription"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/joyce.js"></script>
+</body>
+</html>

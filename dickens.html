@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charles Dickens Flowchart</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/dickens.css" />
+</head>
+
+<body class="flowchart-page">
+  <header class="dickens-header">
+    <a href="../index.html" class="back-link">← Home</a>
+    <h1>Charles Dickens</h1>
+  </header>
+
+  <main class="dickens-page">
+    <section class="flowchart-title dickens-title">
+      <p class="eyebrow">Reading Flowchart</p>
+      <h2>Charles Dickens</h2>
+      <p>A visual reading path through Dickens’s major works.</p>
+    </section>
+
+    <section class="dickens-flowchart-wrap">
+      <div class="dickens-flowchart">
+
+        <div class="df-start">START<br>HERE</div>
+
+        <!-- books -->
+        <div class="df-book df-carol book-detail-trigger" data-book="carol">
+          <img src="../images/dickens-a-christmas-carol.jpg" alt="">
+          <p>A Christmas Carol</p>
+        </div>
+
+        <div class="df-book df-oliver book-detail-trigger" data-book="oliver">
+          <img src="../images/dickens-oliver-twist.jpg" alt="">
+          <p>Oliver Twist</p>
+        </div>
+
+        <div class="df-book df-expectations book-detail-trigger" data-book="expectations">
+          <img src="../images/dickens-great-expectations.jpg" alt="">
+          <p>Great Expectations</p>
+        </div>
+
+        <div class="df-book df-edwin book-detail-trigger" data-book="edwin">
+          <img src="../images/dickens-the-mystery-of-edwin-drood.jpg" alt="">
+          <p>The Mystery of<br>Edwin Drood</p>
+        </div>
+
+        <div class="df-book df-little book-detail-trigger" data-book="little">
+          <img src="../images/dickens-little-dorrit.jpg" alt="">
+          <p>Little Dorrit</p>
+        </div>
+
+        <div class="df-book df-bleak book-detail-trigger" data-book="bleak">
+          <img src="../images/dickens-bleak-house.jpg" alt="">
+          <p>Bleak House</p>
+        </div>
+
+        <div class="df-book df-tale book-detail-trigger" data-book="tale">
+          <img src="../images/dickens-a-tale-of-two-cities.jpg" alt="">
+          <p>A Tale of<br>Two Cities</p>
+        </div>
+
+        <div class="df-book df-nicholas book-detail-trigger" data-book="nicholas">
+          <img src="../images/dickens-nicholas-nickleby.jpg" alt="">
+          <p>Nicholas Nickleby</p>
+        </div>
+
+        <div class="df-book df-hard book-detail-trigger" data-book="hard">
+          <img src="../images/dickens-hard-times.jpg" alt="">
+          <p>Hard Times</p>
+        </div>
+
+        <div class="df-book df-curiosity book-detail-trigger" data-book="curiosity">
+          <img src="../images/dickens-the-old-curiosity-shop.jpg" alt="">
+          <p>The Old Curiosity Shop</p>
+        </div>
+
+        <div class="df-book df-david book-detail-trigger" data-book="david">
+          <img src="../images/dickens-david-copperfield.jpg" alt="">
+          <p>David Copperfield</p>
+        </div>
+
+        <!-- texts -->
+        <div class="df-text df-t1">Ready for a longer<br>Dickens novel?</div>
+
+        <div class="df-text df-t2">Dickens’s major works</div>
+
+        <div class="df-text df-t3">Autobiographical<br>novel</div>
+
+        <div class="df-text df-t4">Dickens’s socially critical novels</div>
+
+        <div class="df-text df-t5">Want sharper<br>social criticism?</div>
+
+        <div class="df-text df-t6">Curious about Dickens’s<br>unfinished mystery?</div>
+        
+        <!-- lines -->
+        <div class="df-line df-l1"></div>
+        <div class="df-line df-l2"></div>
+        <div class="df-line df-l3 vertical"></div>
+        <div class="df-line df-l4 vertical"></div>
+        <div class="df-line df-l5 vertical"></div>
+        <div class="df-line df-l6 vertical"></div>
+        <div class="df-line df-l7 vertical"></div>
+        <div class="df-line df-l8 vertical"></div>
+        <div class="df-line df-l9 vertical"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="book-detail-overlay" id="bookDetailOverlay">
+  <div class="book-detail-panel" id="bookDetailPanel">
+    <div class="book-detail-image">
+      <img id="detailBookImage" src="" alt="">
+    </div>
+
+    <div class="book-detail-text">
+      <h2 id="detailBookTitle"></h2>
+      <div class="book-detail-meta" id="detailBookMeta"></div>
+      <p id="detailBookDescription"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/dickens.js"></script>
+</body>
+</html>

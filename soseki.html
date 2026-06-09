@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Natsume Soseki Flowchart</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/soseki.css" />
+</head>
+
+<body class="flowchart-page">
+
+  <header class="soseki-header">
+    <a href="../index.html" class="back-link">← Home</a>
+    <h1>Natsume Soseki</h1>
+  </header>
+
+  <main class="soseki-page">
+    <section class="flowchart-title soseki-title">
+      <p class="eyebrow">Reading Flowchart</p>
+      <h2>Natsume Soseki</h2>
+      <p>A visual reading path through Soseki’s major works.</p>
+    </section>
+
+    <section class="soseki-flowchart-wrap">
+      <div class="soseki-flowchart">
+
+        <div class="sf-start">START<br>HERE</div>
+
+        <div class="sf-book sf-cat book-detail-trigger" data-book="cat">
+          <img src="../images/soseki-i-am-a-cat.jpg" alt="">
+          <p>I Am a Cat</p>
+        </div>
+
+        <div class="sf-book sf-nowaki book-detail-trigger" data-book="nowaki">
+          <img src="../images/soseki-nowaki.jpg" alt="">
+          <p>Nowaki</p>
+        </div>
+
+        <div class="sf-book sf-kokoro book-detail-trigger" data-book="kokoro">
+          <img src="../images/soseki-kokoro.jpg" alt="">
+          <p>Kokoro</p>
+        </div>
+
+        <div class="sf-book sf-botchan book-detail-trigger" data-book="botchan">
+          <img src="../images/soseki-botchan.jpg" alt="">
+          <p>Botchan</p>
+        </div>
+
+        <div class="sf-book sf-kusamakura book-detail-trigger" data-book="kusamakura">
+          <img src="../images/soseki-kusamakura.jpg" alt="">
+          <p>Kusamakura</p>
+        </div>
+
+        <div class="sf-book sf-miner book-detail-trigger" data-book="miner">
+          <img src="../images/soseki-the-miner.jpg" alt="">
+          <p>The Miner</p>
+        </div>
+
+       <div class="sf-book sf-sanshiro book-detail-trigger" data-book="sanshiro">
+          <img src="../images/soseki-sanshiro.jpg" alt="">
+          <p>Sanshiro</p>
+        </div>
+
+        <div class="sf-book sf-then book-detail-trigger" data-book="then">
+          <img src="../images/soseki-then.jpg" alt="">
+          <p>And Then</p>
+        </div>
+
+        <div class="sf-book sf-gate book-detail-trigger" data-book="gate">
+          <img src="../images/soseki-the-gate.jpg" alt="">
+          <p>The Gate</p>
+        </div>
+
+        <div class="sf-book sf-higan book-detail-trigger" data-book="higan">
+          <img src="../images/soseki-higan-sugi-made.jpg" alt="">
+          <p>Higan Sugi Made</p>
+        </div>
+
+        <div class="sf-book sf-wayfarer book-detail-trigger" data-book="wayfarer">
+          <img src="../images/soseki-the-wayfarer.jpg" alt="">
+          <p>The Wayfarer</p>
+        </div>
+
+        <div class="sf-book sf-poppy book-detail-trigger" data-book="poppy">
+          <img src="../images/soseki-the-poppy.jpg" alt="">
+          <p>The Poppy</p>
+        </div>
+
+        <div class="sf-book sf-light book-detail-trigger" data-book="light">
+          <img src="../images/soseki-light-and-darkness.jpg" alt="">
+          <p>Light and Darkness</p>
+        </div>
+
+
+        <div class="sf-book sf-grass book-detail-trigger" data-book="grass">
+          <img src="../images/soseki-grass-on-the-wayside.jpg" alt="">
+          <p>Grass on the Wayside</p>
+        </div>
+
+        <div class="sf-text sf-t1">The starting point of<br>Soseki's themes</div>
+        <div class="sf-text sf-t2">Want to read<br>his early work?</div>
+        <div class="sf-text sf-t3">I like Soseki's<br>playful humor</div>
+        <div class="sf-text sf-t4">Curious about Soseki’s<br>view of human nature?</div>
+        <div class="sf-text sf-t5">Explore Soseki’s<br>literary excellence</div>
+        <div class="sf-text sf-t6">Among the<br>love trilogy,<br>Sanshiro<br>was the best</div>
+        <div class="sf-text sf-t7">What kind of woman<br>does Soseki portray?</div>
+        <div class="sf-text sf-t8">What kind of relationship<br>does Soseki portray?</div>
+        <div class="sf-text sf-t9">Soseki’s life becomes<br>even more interesting</div>
+        <div class="sf-text sf-t10">Want to read Soseki’s<br>turning point and major work?</div>
+        <div class="sf-text sf-t11">I liked <i>And Then</i><br>the most.</div>
+
+        <div class="sf-line sf-l1 reverse"></div>
+        <div class="sf-line sf-l2 reverse"></div>
+        <div class="sf-line sf-l3"></div>
+        <div class="sf-line sf-l4 up"></div>
+        <div class="sf-line sf-l5 vertical"></div>
+        <div class="sf-line sf-l6 vertical"></div>
+        <div class="sf-line sf-l7 reverse"></div>
+        <div class="sf-line sf-l8 vertical"></div>
+        
+        <div class="sf-line sf-l10 vertical"></div>
+        <div class="sf-line sf-l11"></div>
+        <div class="sf-line sf-l12 vertical"></div>
+        <div class="sf-diagonal sf-d1 diagonal-left"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="book-detail-overlay" id="bookDetailOverlay">
+  <div class="book-detail-panel" id="bookDetailPanel">
+    <div class="book-detail-image">
+      <img id="detailBookImage" src="" alt="">
+    </div>
+
+    <div class="book-detail-text">
+      <h2 id="detailBookTitle"></h2>
+      <div class="book-detail-meta" id="detailBookMeta"></div>
+      <p id="detailBookDescription"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/soseki.js"></script>
+</body>
+</html>

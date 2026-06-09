@@ -1,0 +1,506 @@
+/* Thomas Pynchon */
+
+.pynchon-header {
+  position: fixed;
+  top: 56px;
+  left: 56px;
+  right: 56px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pynchon-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.pynchon-page {
+  padding: 150px 48px 100px;
+}
+
+.pynchon-title {
+  margin-bottom: 70px;
+}
+
+.pynchon-title h2 {
+  font-size: 100px;
+  line-height: 0.9;
+  margin: 0 0 28px;
+  letter-spacing: -0.06em;
+}
+
+.pynchon-flowchart-wrap {
+  width: 1085px;
+  height: 1470px;
+  margin: 0 auto 120px;
+  position: relative;
+}
+
+.pynchon-flowchart {
+  position: relative;
+  width: 1180px;
+  height: 1600px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.35);
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+/* book common */
+
+.pf-book {
+  position: absolute;
+  width: 160px;
+  text-align: center;
+  z-index: 10;
+}
+
+.pf-book img {
+  width: 125px;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.pf-book p {
+  margin: 0;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.15;
+}
+
+/* start circle */
+
+.pf-start {
+  position: absolute;
+  left: 545px;
+  top: 55px;
+  width: 86px;
+  height: 86px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 30;
+}
+
+/* book positions */
+
+.pf-v {
+  left: 95px;
+  top: 245px;
+}
+
+.pf-lot49 {
+  left: 925px;
+  top: 245px;
+}
+
+.pf-gravity {
+  left: 510px;
+  top: 560px;
+}
+
+.pf-inherent {
+  left: 95px;
+  top: 950px;
+}
+
+.pf-bleeding {
+  left: 330px;
+  top: 950px;
+}
+
+.pf-mason {
+  left: 690px;
+  top: 950px;
+}
+
+.pf-against {
+  left: 925px;
+  top: 950px;
+}
+
+.pf-slow {
+  left: 330px;
+  top: 1325px;
+}
+
+.pf-vineland {
+  left: 690px;
+  top: 1325px;
+}
+
+/* text common */
+
+.pf-text {
+  position: absolute;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.2;
+  z-index: 20;
+  background: #000;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+.pf-t1 {
+  left: 540px;
+  top: 185px;
+  text-align: center;
+}
+
+.pf-t2 {
+  left: 510px;
+  top: 275px;
+  text-align: center;
+}
+
+.pf-t3 {
+  left: 530px;
+  top: 500px;
+  text-align: center;
+}
+
+.pf-t4 {
+  left: 225px;
+  top: 805px;
+  text-align: center;
+}
+
+.pf-t5 {
+  left: 805px;
+  top: 805px;
+  text-align: center;
+}
+
+/* still want more? */
+.pf-t6 {
+  left: 550px;
+  top: 1180px;
+  text-align: center;
+}
+
+
+/* line common */
+
+.pf-line {
+  position: absolute;
+  background: white;
+  z-index: 3;
+}
+
+.pf-line::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.pf-line.vertical::after {
+  right: -5px;
+  top: auto;
+  bottom: -1px;
+  transform: rotate(135deg);
+}
+
+.pf-line.reverse::after {
+  left: -1px;
+  right: auto;
+  transform: rotate(-135deg);
+}
+
+.pf-line.up::after {
+  right: -5px;
+  top: -1px;
+  bottom: auto;
+  transform: rotate(-45deg);
+}
+
+.pf-line.no-arrow::after {
+  display: none;
+}
+
+/* diagonal line common */
+
+.pf-diagonal {
+  position: absolute;
+  height: 2px;
+  background: white;
+  z-index: 3;
+  transform-origin: left center;
+}
+
+.pf-diagonal::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+/* line positions */
+
+/* START HERE → split */
+.pf-l1 {
+  left: 588px;
+  top: 141px;
+  width: 2px;
+  height: 29px;
+}
+
+/* top horizontal connector, no arrow */
+.pf-l2 {
+  left: 175px;
+  top: 170px;
+  width: 825px;
+  height: 2px;
+}
+
+/* connector → V. */
+.pf-l3 {
+  left: 175px;
+  top: 170px;
+  width: 2px;
+  height: 60px;
+}
+
+/* connector → The Crying of Lot 49 */
+.pf-l4 {
+  left: 1000px;
+  top: 170px;
+  width: 2px;
+  height: 60px;
+}
+
+/* The Crying of Lot 49 → Gravity's Rainbow */
+.pf-l5 {
+  left: 260px;
+  top: 340px;
+  width: 660px;
+  height: 2px;
+}
+
+/* Gravity's Rainbow → lower split */
+.pf-l6 {
+  left: 590px;
+  top: 805px;
+  width: 2px;
+  height: 70px;
+}
+
+/* second-row horizontal connector, no arrow */
+.pf-l7 {
+  left: 175px;
+  top: 875px;
+  width: 825px;
+  height: 2px;
+}
+
+/* connector → Inherent Vice */
+.pf-l8 {
+  left: 175px;
+  top: 875px;
+  width: 2px;
+  height: 60px;
+}
+
+/* connector → Bleeding Edge */
+.pf-l9 {
+  left: 410px;
+  top: 875px;
+  width: 2px;
+  height: 60px;
+}
+
+/* connector → Mason and Dixon */
+.pf-l10 {
+  left: 770px;
+  top: 875px;
+  width: 2px;
+  height: 60px;
+}
+
+/* connector → Against the Day */
+.pf-l11 {
+  left: 1000px;
+  top: 875px;
+  width: 2px;
+  height: 60px;
+}
+
+/* Inherent Vice → Bleeding Edge */
+.pf-l12 {
+  left: 295px;
+  top: 1200px;
+  width: 2px;
+  height: 50px;
+}
+
+/* Mason and Dixon → Against the Day */
+.pf-l13 {
+  left: 885px;
+  top: 1200px;
+  width: 2px;
+  height: 52px;
+}
+
+/* lower horizontal connector, no arrow */
+.pf-l14 {
+  left: 295px;
+  top: 1250px;
+  width: 590px;
+  height: 2px;
+}
+
+/* connector → Slow Learner */
+.pf-l15 {
+  left: 410px;
+  top: 1250px;
+  width: 2px;
+  height: 60px;
+}
+
+/* connector → Vineland */
+.pf-l16 {
+  left: 770px;
+  top: 1250px;
+  width: 2px;
+  height: 60px;
+}
+
+
+/* V. → Gravity’s Rainbow */
+.pf-d1 {
+  left: 200px;
+  top: 455px;
+  width: 340px;
+  transform: rotate(25deg);
+}
+
+/* The Crying of Lot 49 → Gravity’s Rainbow */
+.pf-d2 {
+  left: 950px;
+  top: 465px;
+  width: 310px;
+  transform: rotate(155deg);
+}
+
+/* book detail overlay */
+
+.book-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+
+.book-detail-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-detail-panel {
+  width: min(980px, 86vw);
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 70px;
+  align-items: center;
+  transform: scale(0.82);
+  opacity: 0;
+  transition: transform 420ms ease, opacity 420ms ease;
+}
+
+.book-detail-overlay.active .book-detail-panel {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.book-detail-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  border: none;
+}
+
+.book-detail-text {
+  color: white;
+}
+
+.book-detail-text h2 {
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 0 0 22px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.book-detail-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.58);
+  margin-bottom: 28px;
+}
+
+.book-detail-meta span {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.book-detail-text p {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.book-detail-trigger {
+  cursor: pointer;
+}
+
+.book-detail-trigger img {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+.book-detail-trigger:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}

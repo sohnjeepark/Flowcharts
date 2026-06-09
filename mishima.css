@@ -1,0 +1,540 @@
+/* Yukio Mishima */
+        .flowchart-page {
+          background: #000;
+          color: white;
+          min-height: 100vh;
+          overflow: auto;
+        }
+
+        .mishima-header {
+          position: fixed;
+          top: 42px;
+          left: 56px;
+          right: 56px;
+          z-index: 100;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .mishima-header h1 {
+          margin: 0;
+          font-size: 34px;
+          font-weight: 700;
+        }
+
+        .mishima-page {
+          padding: 130px 48px 100px;
+        }
+
+        .mishima-title {
+          margin-bottom: 70px;
+        }
+
+        .mishima-title h2 {
+          font-size: 110px;
+          line-height: 0.9;
+          margin: 0 0 28px;
+          letter-spacing: -0.06em;
+        }
+
+.mishima-flowchart-wrap {
+  width: 1085px;
+  height: 1417px;
+  margin: 0 auto 120px;
+  position: relative;
+}
+
+.mishima-flowchart {
+  position: relative;
+  width: 1180px;
+  height: 1650px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.35);
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+      
+
+        /* 책 노드 공통 */
+        .mf-book {
+          position: absolute;
+          width: 150px;
+          text-align: center;
+          z-index: 5;
+        }
+
+        .mf-book img {
+          width: 125px;
+          height: 185px;
+          object-fit: cover;
+          display: block;
+          margin: 0 auto 12px;
+          border: 1px solid rgba(255,255,255,0.25);
+        }
+
+        .mf-book p {
+          margin: 0;
+          color: white;
+          font-family: Georgia, "Times New Roman", serif;
+          font-style: italic;
+          font-size: 17px;
+          line-height: 1.15;
+        }
+
+        /* 시작 원 */
+        .mf-start {
+          position: absolute;
+          left: 210px;
+          top: 130px;
+          width: 86px;
+          height: 86px;
+          border: 1.5px solid white;
+          border-radius: 50%;
+          font-family: Georgia, "Times New Roman", serif;
+          font-style: italic;
+          font-size: 17px;
+          line-height: 1.05;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          color: white;
+          z-index: 10;
+        }
+
+        /* 책 위치 */
+        .mf-sailor {
+          left: 310px;
+          top: 80px;
+        }
+
+        .mf-golden {
+          left: 820px;
+          top: 80px;
+        }
+
+        .mf-frolic {
+          left: 560px;
+          top: 380px;
+        }
+
+        .mf-waves {
+          left: 40px;
+          top: 560px;
+        }
+
+        .mf-colors {
+          left: 260px;
+          top: 750px;
+        }
+
+        .mf-mask {
+          left: 450px;
+          top: 610px;
+        }
+
+        .mf-patriotism {
+          left: 840px;
+          top: 590px;
+        }
+
+        .mf-silk {
+          left: 680px;
+          top: 830px;
+        }
+
+        .mf-star {
+          left: 990px;
+          top: 955px;
+        }
+
+        .mf-sun {
+          left: 75px;
+          top: 1080px;
+        }
+
+        .mf-stories {
+          left: 740px;
+          top: 1060px;
+        }
+
+        .mf-spring {
+          left: 230px;
+          top: 1350px;
+        }
+
+        .mf-runaway {
+          left: 380px;
+          top: 1350px;
+        }
+
+        .mf-dawn {
+          left: 530px;
+          top: 1350px;
+        }
+
+        .mf-decay {
+          left: 680px;
+          top: 1350px;
+        }
+
+        /* 설명 텍스트 */
+    
+        .mf-text {
+        position: absolute;
+        color: white;
+        font-family: Helvetica, Arial, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 1.25;
+        z-index: 8;
+        background: #000;
+        padding: 4px 8px;
+        }
+
+        .mf-t1 {
+        left: 510px;
+        top: 120px;
+        }
+
+        .mf-t2 {
+        left: 100px;
+        top: 340px;
+        }
+
+        .mf-t3 {
+        left: 220px;
+        top: 570px;
+        }
+
+        .mf-t4 {
+        left: 910px;
+        top: 390px;
+        }
+
+        .mf-t5 {
+        left: 656px;
+        top: 730px;
+        }
+
+        .mf-t6 {
+        left: 560px;
+        top: 1080px;
+        }
+
+        .mf-t7 {
+        left: 260px;
+        top: 1090px;
+        }
+
+        .mf-t8 {
+        left: 260px;
+        top: 1300px;
+        }
+
+        .mf-no-waves {
+        left: 300px;
+        top: 670px;
+        }
+
+        .mf-minor-work {
+        left: 880px;
+        top: 910px;
+        }
+        
+        /* 선 공통 */
+        .mf-line {
+          position: absolute;
+          background: white;
+          z-index: 2;
+        }
+
+        .mf-line::after {
+          content: "";
+          position: absolute;
+          right: -1px;
+          top: -5px;
+          width: 10px;
+          height: 10px;
+          border-top: 2px solid white;
+          border-right: 2px solid white;
+          transform: rotate(45deg);
+        }
+
+        .mf-line.vertical::after {
+          right: -5px;
+          top: auto;
+          bottom: -1px;
+          transform: rotate(135deg);
+        }
+
+        .mf-line.reverse::after {
+          left: -1px;
+          right: auto;
+          transform: rotate(-135deg);
+        }
+
+        /* 선 위치 */
+        .mf-l1 {
+          left: 455px;
+          top: 185px;
+          width: 360px;
+          height: 2px;
+        }
+
+        .mf-l2 {
+          left: 660px;
+          top: 186px;
+          width: 2px;
+          height: 180px;
+        }
+
+        .mf-l3 {
+          left: 175px;
+          top: 445px;
+          width: 378px;
+          height: 2px;
+        }
+
+        .mf-l4 {
+          left: 890px;
+          top: 320px;
+          width: 2px;
+          height: 260px;
+        }
+
+        .mf-l5 {
+          left: 190px;
+          top: 635px;
+          width: 250px;
+          height: 2px;
+        }
+
+        .mf-l6 {
+          left: 610px;
+          top: 690px;
+          width: 230px;
+          height: 2px;
+        }
+
+        .mf-l7 {
+          left: 535px;
+          top: 855px;
+          width: 2px;
+          height:470px;
+        }
+
+        .mf-l8 {
+         left: 230px;
+         top: 1150px;
+         width: 305px;
+         height: 2px;
+        }
+
+        .mf-l9 {
+         left: 535px;
+         top: 1120px;
+         width: 200px;
+         height: 2px;
+        }
+
+        /* The Sound of Waves → Forbidden Colors */
+       
+
+        .mf-l11 {
+        left: 350px;
+        top: 635px;
+        width: 2px;
+        height: 95px;
+        }
+
+        /* Patriotism → Silk and Insight */
+     
+
+        .mf-l13 {
+        left: 750px;
+        top: 692px;
+        width: 2px;
+        height: 120px;
+        }
+
+        
+
+       .mf-diagonal {
+            position: absolute;
+            height: 2px;
+            background: white;
+            z-index: 3;
+            transform-origin: left center;
+            }
+
+            .mf-diagonal::after {
+            content: "";
+            position: absolute;
+            right: -1px;
+            top: -5px;
+            width: 10px;
+            height: 10px;
+            border-top: 2px solid white;
+            border-right: 2px solid white;
+            transform: rotate(45deg);
+            }
+
+/* START HERE → The Sound of Waves */
+.mf-d1 {
+  left: 300px;
+  top: 305px;
+  width: 320px;
+  transform: rotate(132deg);
+}
+
+/* Silk and Insight → Star */
+.mf-d2 {
+  left: 827px;
+  top: 900px;
+  width: 220px;
+  transform: rotate(42deg);
+}
+
+/* book detail overlay */
+
+.book-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+
+.book-detail-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-detail-panel {
+  width: min(980px, 86vw);
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 70px;
+  align-items: center;
+  transform: scale(0.82);
+  opacity: 0;
+  transition: transform 420ms ease, opacity 420ms ease;
+}
+
+.book-detail-overlay.active .book-detail-panel {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.book-detail-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  border: none;
+}
+
+.book-detail-text {
+  color: white;
+}
+
+.book-detail-text h2 {
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 0 0 32px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.book-detail-text p {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+/* clickable book */
+
+.book-detail-trigger {
+  cursor: pointer;
+}
+
+.book-detail-trigger img {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+.book-detail-trigger:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
+
+/* small screen */
+
+@media (max-width: 800px) {
+  .book-detail-panel {
+    grid-template-columns: 1fr;
+    width: min(520px, 84vw);
+    gap: 32px;
+    text-align: center;
+  }
+
+  .book-detail-image img {
+    max-height: 420px;
+  }
+
+  .book-detail-text p {
+    max-width: none;
+  }
+}
+
+.book-detail-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.book-detail-bg-symbol {
+  position: absolute;
+  left: 100px;
+  top: -1px;
+  width: 580px;
+  opacity: 0;
+  z-index: 1;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+
+.book-detail-overlay.active .book-detail-bg-symbol.active {
+  opacity: 0.22;
+}
+
+.book-detail-image,
+.book-detail-text {
+  position: relative;
+  z-index: 2;
+}
+
+.book-detail-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.58);
+  margin-bottom: 28px;
+}
+
+.book-detail-meta span {
+  display: inline-block;
+  margin-right: 18px;
+}

@@ -1,0 +1,540 @@
+/* Natsume Soseki */
+
+.soseki-header {
+  position: fixed;
+  top: 56px;
+  left: 56px;
+  right: 56px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.soseki-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.soseki-page {
+  padding: 150px 48px 100px;
+}
+
+.soseki-title {
+  margin-bottom: 70px;
+}
+
+.soseki-title h2 {
+  font-size: 100px;
+  line-height: 0.9;
+  margin: 0 0 28px;
+  letter-spacing: -0.06em;
+}
+
+.soseki-flowchart-wrap {
+  width: 1085px;
+  height: 1780px;
+  margin: 0 auto 120px;
+  position: relative;
+}
+
+.soseki-flowchart {
+  position: relative;
+  width: 1180px;
+  height: 1950px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.35);
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+/* book common */
+
+.sf-book {
+  position: absolute;
+  width: 160px;
+  text-align: center;
+  z-index: 10;
+}
+
+.sf-book img {
+  width: 125px;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.sf-book p {
+  margin: 0;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.15;
+}
+
+/* trilogy book group */
+
+/* trilogy book group */
+
+.sf-trilogy {
+  width: 460px;
+}
+
+.sf-trilogy-row {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.sf-trilogy-row img {
+  width: 125px;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* start */
+
+.sf-start {
+  position: absolute;
+  left: 420px;
+  top: 95px;
+  width: 86px;
+  height: 86px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 30;
+}
+
+/* book positions */
+
+.sf-cat {
+  left: 510px;
+  top: 40px;
+}
+
+.sf-nowaki {
+  left: 90px;
+  top: 620px;
+}
+
+.sf-kokoro {
+  left: 90px;
+  top: 300px;
+}
+
+.sf-botchan {
+  left: 910px;
+  top: 620px;
+}
+
+.sf-kusamakura {
+  left: 90px;
+  top: 940px;
+}
+
+.sf-miner {
+  left: 910px;
+  top: 300px;
+}
+
+
+.sf-sanshiro {
+  left: 370px;
+  top: 940px;
+}
+
+.sf-then {
+  left: 510px;
+  top: 940px;
+}
+
+.sf-gate {
+  left: 650px;
+  top: 940px;
+}
+
+.sf-higan {
+  left: 510px;
+  top: 1700px;
+}
+
+.sf-wayfarer {
+  left: 220px;
+  top: 1340px;
+}
+
+.sf-poppy {
+  left: 510px;
+  top: 1340px;
+}
+
+.sf-light {
+  left: 910px;
+  top: 1700px;
+}
+
+.sf-grass {
+  left: 910px;
+  top: 940px;
+}
+
+/* text common */
+
+.sf-text {
+  position: absolute;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.2;
+  z-index: 20;
+  background: #000;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+/* text positions */
+
+/* The starting point of Soseki's themes */
+.sf-t1 {
+  left: 340px;
+  top: 635px;
+}
+
+/* want to read his early work? */
+.sf-t2 {
+  left: 680px;
+  top: 635px;
+}
+
+/* I like Soseki's playful humor */
+.sf-t3 {
+  left: 860px;
+  top: 540px;
+}
+/* curious about Soseki's view of human nature? */
+.sf-t4 {
+  left: 790px;
+  top: 860px;
+}
+/* explore Soseki's literary excellence */
+.sf-t5 {
+  left: 510px;
+  top: 780px;
+}
+
+/* among the love trilogy, Sanshiro was the best */
+.sf-t6 {
+  left: 250px;
+  top: 925px;
+}
+
+/* which woman does Soseki talk about? */
+.sf-t7 {
+  left: 605px;
+  top: 1220px;
+}
+
+/* Which relationship does Soseki  */
+.sf-t8 {
+  left: 605px;
+  top: 1590px;
+}
+/* Soseki's life becomes even more interesting*/
+.sf-t9 {
+  left: 800px;
+  top: 1400px;
+}
+
+/* Want to read Soseki’s turning point and major work? */
+.sf-t10 {
+  left: 300px;
+  top: 330px;
+}
+/* I liked And Then the most. */
+.sf-t11 {
+  left: 280px;
+  top: 1220px;
+}
+
+/* line common */
+
+.sf-line {
+  position: absolute;
+  background: white;
+  z-index: 3;
+}
+
+.sf-line::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.sf-line.vertical::after {
+  right: -5px;
+  top: auto;
+  bottom: -1px;
+  transform: rotate(135deg);
+}
+
+.sf-line.reverse::after {
+  left: -1px;
+  right: auto;
+  transform: rotate(-135deg);
+}
+
+.sf-line.up::after {
+  right: -5px;
+  top: -1px;
+  bottom: auto;
+  transform: rotate(-45deg);
+}
+
+.sf-line.no-arrow::after {
+  display: none;
+}
+
+.sf-diagonal {
+  position: absolute;
+  height: 2px;
+  background: white;
+  z-index: 3;
+  transform-origin: left center;
+}
+
+.sf-diagonal::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.sf-diagonal.diagonal-left::after {
+  left: -1px;
+  right: auto;
+  transform: rotate(-135deg);
+}
+
+
+/* line positions */
+
+/* START HERE → I Am a Cat */
+.sf-l1 {
+  left: 260px;
+  top: 390px;
+  width: 330px;
+  height: 2px;
+}
+
+/* I Am a Cat → Nowaki */
+.sf-l2 {
+  left: 260px;
+  top: 700px;
+  width: 330px;
+  height: 2px;
+}
+
+/* I Am a Cat → Botchan */
+.sf-l3 {
+  left: 590px;
+  top: 700px;
+  width: 310px;
+  height: 2px;
+}
+
+/* Botchan → The Miner */
+.sf-l4 {
+  left: 990px;
+  top: 530px;
+  width: 2px;
+  height: 70px;
+}
+
+/* Botchan → Grass on the Wayside */
+.sf-l5 {
+  left: 990px;
+  top: 850px;
+  width: 2px;
+  height: 70px;
+}
+
+/* I Am a Cat → trilogy */
+.sf-l6 {
+  left: 590px;
+  top: 270px;
+  width: 2px;
+  height: 650px;
+}
+
+/* trilogy → Kusamakura */
+.sf-l7 {
+  left: 250px;
+  top: 1030px;
+  width: 120px;
+  height: 2px;
+}
+
+/* trilogy → The Poppy */
+.sf-l8 {
+  left: 590px;
+  top: 1170px;
+  width: 2px;
+  height: 150px;
+}
+
+
+
+/* Grass -> Light and Darkness */
+.sf-l10 {
+  left: 990px;
+  top: 1190px;
+  width: 2px;
+  height: 490px;
+}
+
+/* Higan → Light and Darkness */
+.sf-l11 {
+  left: 670px;
+  top: 1795px;
+  width: 235px;
+  height: 2px;
+}
+
+/* The Poppy → The Moon and the Boy Soldier */
+.sf-l12 {
+  left: 590px;
+  top: 1570px;
+  width: 2px;
+  height: 110px;
+}
+
+/* diagonal left arrow */
+.sf-d1 {
+  left: 350px;
+  top: 1320px;
+  width: 250px;
+  transform: rotate(-35deg);
+}
+
+/* book detail overlay */
+
+.book-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+
+.book-detail-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-detail-panel {
+  width: min(980px, 86vw);
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 70px;
+  align-items: center;
+  transform: scale(0.82);
+  opacity: 0;
+  transition: transform 420ms ease, opacity 420ms ease;
+}
+
+.book-detail-overlay.active .book-detail-panel {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.book-detail-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  border: none;
+}
+
+.book-detail-text {
+  color: white;
+}
+
+.book-detail-text h2 {
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 0 0 22px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.book-detail-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.58);
+  margin-bottom: 28px;
+}
+
+.book-detail-meta span {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.book-detail-text p {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.book-detail-trigger {
+  cursor: pointer;
+}
+
+.book-detail-trigger img {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+.book-detail-trigger:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}

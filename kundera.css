@@ -1,0 +1,509 @@
+/* Milan Kundera */
+
+.kundera-header {
+  position: fixed;
+  top: 56px;
+  left: 56px;
+  right: 56px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.kundera-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.kundera-page {
+  padding: 150px 48px 100px;
+}
+
+.kundera-title {
+  margin-bottom: 70px;
+}
+
+.kundera-title h2 {
+  font-size: 100px;
+  line-height: 0.9;
+  margin: 0 0 28px;
+  letter-spacing: -0.06em;
+}
+
+.kundera-flowchart-wrap {
+  width: 1085px;
+  height: 1450px;
+  margin: 0 auto 120px;
+  position: relative;
+}
+
+.kundera-flowchart {
+  position: relative;
+  width: 1180px;
+  height: 1580px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.35);
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+/* book common style */
+
+.kf-book {
+  position: absolute;
+  width: 150px;
+  text-align: center;
+  z-index: 10;
+}
+
+.kf-book img {
+  width: 112px;
+  height: 165px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.kf-book p {
+  margin: 0;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.15;
+}
+
+/* start circle */
+
+.kf-start {
+  position: absolute;
+  left: 275px;
+  top: 20px;
+  width: 86px;
+  height: 86px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 30;
+}
+
+/* book positions */
+
+.kf-laughable {
+  left: 50px;
+  top: 115px;
+}
+
+.kf-joke {
+  left: 245px;
+  top: 115px;
+}
+
+.kf-life {
+  left: 500px;
+  top: 115px;
+}
+
+.kf-farewell {
+  left: 970px;
+  top: 115px;
+}
+
+.kf-unbearable {
+  left: 500px;
+  top: 455px;
+}
+
+.kf-immortality {
+  left: 760px;
+  top: 455px;
+}
+
+.kf-laughter {
+  left: 500px;
+  top: 775px;
+}
+
+.kf-testaments {
+  left: 55px;
+  top: 775px;
+}
+
+.kf-art {
+  left: 245px;
+  top: 775px;
+}
+
+.kf-encounter {
+  left: 55px;
+  top: 1080px;
+}
+
+.kf-jacques {
+  left: 245px;
+  top: 1080px;
+}
+
+.kf-curtain {
+  left: 435px;
+  top: 1080px;
+}
+
+.kf-slowness {
+  left: 760px;
+  top: 775px;
+}
+
+.kf-identity {
+  left: 970px;
+  top: 775px;
+}
+
+.kf-ignorance {
+  left: 760px;
+  top: 1080px;
+}
+
+.kf-festival {
+  left: 970px;
+  top: 1080px;
+}
+
+/* text common style */
+
+.kf-text {
+  position: absolute;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  z-index: 20;
+  background: #000;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+/* text positions */
+
+.kf-t1 {
+  left: 60px;
+  top: 60px;
+}
+
+.kf-t2 {
+  left: 380px;
+  top: 145px;
+}
+
+.kf-t3 {
+  left: 280px;
+  top: 350px;
+}
+
+.kf-t4 {
+  left: 650px;
+  top: 165px;
+}
+
+.kf-t5 {
+  left: 520px;
+  top: 345px;
+}
+
+.kf-t6 {
+  left: 640px;
+  top: 460px;
+}
+
+.kf-t7 {
+  left: 580px;
+  top: 690px;
+}
+
+.kf-t8 {
+  left: 320px;
+  top: 615px;
+}
+
+.kf-t9 {
+  left: 185px;
+  top: 720px;
+}
+
+.kf-t10 {
+  left: 325px;
+  top: 1000px;
+}
+
+.kf-t11 {
+  left: 840px;
+  top: 675px;
+}
+
+.kf-t12 {
+  left: 770px;
+  top: 980px;
+}
+
+.kf-t13 {
+  left: 980px;
+  top: 980px;
+}
+
+.kf-t14 {
+  left: 770px;
+  top: 1290px;
+}
+
+.kf-t15 {
+  left: 985px;
+  top: 1310px;
+}
+
+/* line common style */
+
+.kf-line {
+  position: absolute;
+  background: white;
+  z-index: 3;
+}
+
+.kf-line::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.kf-line.vertical::after {
+  right: -5px;
+  top: auto;
+  bottom: -1px;
+  transform: rotate(135deg);
+}
+
+.kf-line.reverse::after {
+  left: -1px;
+  right: auto;
+  transform: rotate(-135deg);
+}
+
+.kf-line.no-arrow::after {
+  display: none;
+}
+
+/* line positions */
+
+/* Laughable Loves → The Joke */
+.kf-l1 {
+  left: 190px;
+  top: 200px;
+  width: 60px;
+  height: 2px;
+}
+
+/* The Joke → Life Is Elsewhere */
+.kf-l2 {
+  left: 385px;
+  top: 200px;
+  width: 120px;
+  height: 2px;
+}
+
+/* Life Is Elsewhere → Farewell Waltz */
+.kf-l3 {
+  left: 640px;
+  top: 200px;
+  width: 330px;
+  height: 2px;
+}
+
+/* The Joke → 참존가 그냥 선 */
+.kf-l4 {
+  left: 315px;
+  top: 320px;
+  width: 2px;
+  height: 215px;
+}
+
+/* The Joke branch → 참존가 화살표 */
+.kf-l5 {
+  left: 315px;
+  top: 535px;
+  width: 190px;
+  height: 2px;
+}
+
+/* Life Is Elsewhere → 참존가 */
+.kf-l6 {
+  left: 575px;
+  top: 320px;
+  width: 2px;
+  height: 125px;
+}
+
+/* 참존가 → immortality */
+.kf-l7 {
+  left: 640px;
+  top: 535px;
+  width: 120px;
+  height: 2px;
+}
+
+/* 참존가 → laughter */
+.kf-l8 {
+  left: 575px;
+  top: 680px;
+  width: 2px;
+  height: 80px;
+}
+
+/* The Art of the Novel → testaments */
+.kf-l9 {
+  left: 200px;
+  top: 855px;
+  width: 50px;
+  height: 2px;
+}
+
+/* The Art of the Novel → The Curtain */
+.kf-l10 {
+  left: 315px;
+  top: 985px;
+  width: 2px;
+  height: 80px;
+}
+
+/* Art of the Novel 로 향하는 아래 화살표 */
+.kf-l11 {
+  left: 315px;
+  top: 600px;
+  width: 2px;
+  height: 160px;
+}
+
+/* immortality → Slowness / Identity group */
+.kf-l12 {
+  left: 835px;
+  top: 660px;
+  width: 2px;
+  height: 100px;
+}
+
+.kf-l15 {
+    left: 315px;
+    top: 600px;
+    width: 190px;
+    height: 2px;
+}
+
+/* book detail overlay */
+
+.book-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+
+.book-detail-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-detail-panel {
+  width: min(980px, 86vw);
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 70px;
+  align-items: center;
+  transform: scale(0.82);
+  opacity: 0;
+  transition: transform 420ms ease, opacity 420ms ease;
+}
+
+.book-detail-overlay.active .book-detail-panel {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.book-detail-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  border: none;
+}
+
+.book-detail-text {
+  color: white;
+}
+
+.book-detail-text h2 {
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 0 0 22px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.book-detail-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.58);
+  margin-bottom: 28px;
+}
+
+.book-detail-meta span {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.book-detail-text p {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.book-detail-trigger {
+  cursor: pointer;
+}
+
+.book-detail-trigger img {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+.book-detail-trigger:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}

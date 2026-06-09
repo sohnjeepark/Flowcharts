@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Pynchon Flowchart</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/pynchon.css" />
+</head>
+
+<body class="flowchart-page">
+  <header class="pynchon-header">
+    <a href="../index.html" class="back-link">← Home</a>
+    <h1>Thomas Pynchon</h1>
+  </header>
+
+  <main class="pynchon-page">
+    <section class="flowchart-title pynchon-title">
+      <p class="eyebrow">Reading Flowchart</p>
+      <h2>Thomas Pynchon</h2>
+      <p>A visual reading path through Pynchon’s major works.</p>
+    </section>
+
+    <section class="pynchon-flowchart-wrap">
+      <div class="pynchon-flowchart">
+
+        <div class="pf-start">START<br>HERE</div>
+
+        <!-- books -->
+        <div class="pf-book pf-v book-detail-trigger" data-book="v">
+          <img src="../images/pynchon-v.jpg" alt="">
+          <p>V.</p>
+        </div>
+
+        <div class="pf-book pf-lot49 book-detail-trigger" data-book="lot49">
+          <img src="../images/pynchon-the-crying-of-lot-49.jpg" alt="">
+          <p>The Crying<br>of Lot 49</p>
+        </div>
+
+        <div class="pf-book pf-gravity book-detail-trigger" data-book="gravity">
+          <img src="../images/pynchon-gravitys-rainbow.jpg" alt="">
+          <p>Gravity’s<br>Rainbow</p>
+        </div>
+
+        <div class="pf-book pf-inherent book-detail-trigger" data-book="inherent">
+          <img src="../images/pynchon-inherent-vice.jpg" alt="">
+          <p>Inherent<br>Vice</p>
+        </div>
+
+        <div class="pf-book pf-bleeding book-detail-trigger" data-book="bleeding">
+          <img src="../images/pynchon-bleeding-edge.jpg" alt="">
+          <p>Bleeding<br>Edge</p>
+        </div>
+
+        <div class="pf-book pf-mason book-detail-trigger" data-book="mason">
+          <img src="../images/pynchon-mason-and-dixon.jpg" alt="">
+          <p>Mason and<br>Dixon</p>
+        </div>
+
+        <div class="pf-book pf-against book-detail-trigger" data-book="against">
+          <img src="../images/pynchon-against-the-day.jpg" alt="">
+          <p>Against<br>the Day</p>
+        </div>
+
+        <div class="pf-book pf-slow book-detail-trigger" data-book="slow">
+          <img src="../images/pynchon-slow-learner.jpg" alt="">
+          <p>Slow<br>Learner</p>
+        </div>
+
+        <div class="pf-book pf-vineland book-detail-trigger" data-book="vineland">
+          <img src="../images/pynchon-vineland.jpg" alt="">
+          <p>Vineland</p>
+        </div>
+
+        <!-- texts -->
+        <div class="pf-text pf-t1">Start with<br>either one.</div>
+        <div class="pf-text pf-t2">A shorter entry into<br>Pynchon’s world.</div>
+        <div class="pf-text pf-t3">Ready for his<br>major work?</div>
+        <div class="pf-text pf-t4">Want something<br>lighter?</div>
+        <div class="pf-text pf-t5">Want something<br>bigger and denser?</div>
+        <div class="pf-text pf-t6">Still want<br>more?</div>
+        
+       <!-- lines -->
+        <div class="pf-line pf-l1 vertical no-arrow"></div>
+
+        <div class="pf-line pf-l2 no-arrow"></div>
+        <div class="pf-line pf-l3 vertical"></div>
+        <div class="pf-line pf-l4 vertical"></div>
+        <div class="pf-line pf-l5"></div>
+
+        <div class="pf-line pf-l6 vertical no-arrow"></div>
+
+        <div class="pf-line pf-l7 no-arrow"></div>
+        <div class="pf-line pf-l8 vertical"></div>
+        <div class="pf-line pf-l9 vertical"></div>
+        <div class="pf-line pf-l10 vertical"></div>
+        <div class="pf-line pf-l11 vertical"></div>
+
+        <div class="pf-line pf-l12 vertical no-arrow"></div>
+        <div class="pf-line pf-l13 vertical no-arrow"></div>
+
+        <div class="pf-line pf-l14 no-arrow"></div>
+        <div class="pf-line pf-l15 vertical"></div>
+        <div class="pf-line pf-l16 vertical"></div>
+
+  
+        <div class="pf-diagonal pf-d1"></div>
+        <div class="pf-diagonal pf-d2"></div>
+
+      </div>
+    </section>
+  </main>
+
+  <div class="book-detail-overlay" id="bookDetailOverlay">
+  <div class="book-detail-panel" id="bookDetailPanel">
+    <div class="book-detail-image">
+      <img id="detailBookImage" src="" alt="">
+    </div>
+
+    <div class="book-detail-text">
+      <h2 id="detailBookTitle"></h2>
+      <div class="book-detail-meta" id="detailBookMeta"></div>
+      <p id="detailBookDescription"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/pynchon.js"></script>
+</body>
+</html>

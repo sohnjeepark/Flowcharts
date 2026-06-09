@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fyodor Dostoevsky Flowchart</title>
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../css/dostoevsky.css" />
+</head>
+
+<body class="flowchart-page">
+
+  <header class="dostoevsky-header">
+    <a href="../index.html" class="back-link">← Home</a>
+    <h1>Fyodor Dostoevsky</h1>
+  </header>
+
+  <main class="dostoevsky-page">
+    <section class="flowchart-title dostoevsky-title">
+      <p class="eyebrow">Reading Flowchart</p>
+      <h2>Fyodor Dostoevsky</h2>
+      <p>A visual reading path through Dostoevsky’s major works.</p>
+    </section>
+
+    <section class="dostoevsky-flowchart-wrap">
+      <div class="dostoevsky-flowchart">
+
+        <div class="df-start">START<br>HERE</div>
+
+        <div class="df-book df-brothers book-detail-trigger" data-book="brothers">
+          <img src="../images/dostoevsky-the-brothers-karamazov.jpg" alt="">
+          <p>The Brothers Karamazov</p>
+        </div>
+
+        <div class="df-book df-underground book-detail-trigger" data-book="underground">
+          <img src="../images/dostoevsky-notes-from-underground.jpg" alt="">
+          <p>Notes from Underground</p>
+        </div>
+
+        <div class="df-book df-crime book-detail-trigger" data-book="crime">
+          <img src="../images/dostoevsky-crime-and-punishment.jpg" alt="">
+          <p>Crime and Punishment</p>
+        </div>
+
+        <div class="df-book df-idiot book-detail-trigger" data-book="idiot">
+          <img src="../images/dostoevsky-the-idiot.jpg" alt="">
+          <p>The Idiot</p>
+        </div>
+
+        <div class="df-book df-demons book-detail-trigger" data-book="demons">
+          <img src="../images/dostoevsky-demons.jpg" alt="">
+          <p>Demons</p>
+        </div>
+
+        <div class="df-book df-adolescent book-detail-trigger" data-book="adolescent">
+          <img src="../images/dostoevsky-the-adolescent.jpg" alt="">
+          <p>The Adolescent</p>
+        </div>
+
+        <div class="df-book df-dead-house book-detail-trigger" data-book="dead-house">
+          <img src="../images/dostoevsky-notes-from-a-dead-house.jpg" alt="">
+          <p>Notes from a Dead House</p>
+        </div>
+
+        <div class="df-book df-poor-folk book-detail-trigger" data-book="poor-folk">
+          <img src="../images/dostoevsky-poor-folk.jpg" alt="">
+          <p>Poor Folk</p>
+        </div>
+
+        <div class="df-book df-netochka book-detail-trigger" data-book="netochka">
+          <img src="../images/dostoevsky-netochka-nezvanova.jpg" alt="">
+          <p>Netochka Nezvanova</p>
+        </div>
+
+        <div class="df-book df-double book-detail-trigger" data-book="double">
+          <img src="../images/dostoevsky-the-double-and-the-gambler.jpg" alt="">
+          <p>The Double and The Gambler</p>
+        </div>
+
+        <div class="df-book df-humiliated book-detail-trigger" data-book="humiliated">
+          <img src="../images/dostoevsky-humiliated-and-insulted.jpg" alt="">
+          <p>Humiliated and Insulted</p>
+        </div>
+
+        <div class="df-text df-t1">Recommended<br>starting point</div>
+        <div class="df-text df-t2">Want to understand<br>his philosophical world?</div>
+        <div class="df-text df-t3">Want to read<br>his representative work?</div>
+        <div class="df-text df-t4">Go deeper into<br>his major novels</div>
+        <div class="df-text df-t5">Early work</div>
+        <div class="df-text df-t6">More autobiographical<br>and prison experience</div>
+        <div class="df-text df-t7">Early social<br>and sentimental works</div>
+        <div class="df-text df-t8">Final early work</div>
+        <div class="df-text df-t9">A shorter, stranger entry</div>
+
+        <div class="df-line df-l1 vertical"></div>
+        <div class="df-line df-l2 no-arrow"></div>
+        <div class="df-line df-l3 vertical"></div>
+        <div class="df-line df-l4 vertical"></div>
+        <div class="df-line df-l5"></div>
+        <div class="df-line df-l6 reverse"></div>
+
+        <div class="df-line df-l7 vertical"></div>
+        <div class="df-line df-l8 vertical"></div>
+        <div class="df-line df-l9 vertical"></div>
+
+        <div class="df-line df-l10 no-arrow"></div>
+        <div class="df-line df-l11 reverse"></div>
+        <div class="df-line df-l12 vertical"></div>
+
+        <div class="df-line df-l13 no-arrow"></div>
+        <div class="df-line df-l14 reverse"></div>
+       
+
+      </div>
+    </section>
+  </main>
+
+  <div class="book-detail-overlay" id="bookDetailOverlay">
+  <div class="book-detail-panel" id="bookDetailPanel">
+    <div class="book-detail-image">
+      <img id="detailBookImage" src="" alt="">
+    </div>
+
+    <div class="book-detail-text">
+      <h2 id="detailBookTitle"></h2>
+      <div class="book-detail-meta" id="detailBookMeta"></div>
+      <p id="detailBookDescription"></p>
+    </div>
+  </div>
+</div>
+
+  <script src="../js/dostoevsky.js"></script>
+</body>
+</html>

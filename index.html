@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reading Flowcharts</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Reading Flowcharts</h1>
+    <button id="authorsBtn">Authors</button>
+  </header>
+
+  <main id="bookField">
+    <svg id="connectionLayer"></svg>
+  </main>
+
+  <section class="search-box" id="searchBox">
+    <input 
+      id="searchInput"
+      type="text"
+      placeholder="What book are you reading right now?"
+    />
+    <button id="searchButton">⌕</button>
+  </section>
+
+  <section class="results" id="results"></section>
+
+  <section class="authors-panel" id="authorsPanel">
+    <button id="closeAuthors">×</button>
+    <h2>Authors</h2>
+    <div id="authorsList"></div>
+  </section>
+
+  <div class="overlay" id="overlay"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

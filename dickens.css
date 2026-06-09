@@ -1,0 +1,431 @@
+/* Charles Dickens */
+
+.dickens-header {
+  position: fixed;
+  top: 56px;
+  left: 56px;
+  right: 56px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dickens-header h1 {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.dickens-page {
+  padding: 150px 48px 100px;
+}
+
+.dickens-title {
+  margin-bottom: 70px;
+}
+
+.dickens-title h2 {
+  font-size: 100px;
+  line-height: 0.9;
+  margin: 0 0 28px;
+  letter-spacing: -0.06em;
+}
+
+/* flowchart area */
+
+.dickens-flowchart-wrap {
+  width: 1085px;
+  height: 1500px;
+  margin: 0 auto 120px;
+  position: relative;
+}
+
+.dickens-flowchart {
+  position: relative;
+  width: 1180px;
+  height: 1680px;
+  background: #000;
+  border: 1px solid rgba(255,255,255,0.35);
+  overflow: hidden;
+  transform-origin: top left;
+}
+
+/* book common */
+
+.df-book {
+  position: absolute;
+  width: 160px;
+  text-align: center;
+  z-index: 10;
+}
+
+.df-book img {
+  width: 125px;
+  height: 185px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.df-book p {
+  margin: 0;
+  color: white;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.15;
+}
+
+/* START HERE circle */
+
+.df-start {
+  position: absolute;
+  left: 230px;
+  top: 40px;
+  width: 86px;
+  height: 86px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-size: 17px;
+  line-height: 1.05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  z-index: 30;
+}
+
+/* book positions — 네가 보낸 배치 기준 */
+
+.df-carol {
+  left: 60px;
+  top: 40px;
+}
+
+.df-oliver {
+  left: 560px;
+  top: 40px;
+}
+
+.df-expectations {
+  left: 960px;
+  top: 40px;
+}
+
+.df-little {
+  left: 360px;
+  top: 480px;
+}
+
+.df-bleak {
+  left: 560px;
+  top: 480px;
+}
+
+.df-tale {
+  left: 960px;
+  top: 480px;
+}
+
+
+.df-nicholas {
+  left: 360px;
+  top: 790px;
+}
+
+.df-hard {
+  left: 560px;
+  top: 790px;
+}
+
+.df-curiosity {
+  left: 960px;
+  top: 930px;
+}
+
+.df-edwin {
+  left: 960px;
+  top: 1380px;
+}
+
+.df-david {
+  left: 60px;
+  top: 930px;
+}
+/* text common */
+
+.df-text {
+  position: absolute;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 1.2;
+  z-index: 20;
+  background: #000;
+  padding: 4px 8px;
+  white-space: nowrap;
+}
+
+/* text positions */
+
+.df-t1 {
+  left: 350px;
+  top: 90px;
+  text-align: center;
+}
+
+/* Dickens’s major works */
+.df-t2 {
+  left: 300px;
+  top: 160px;
+  text-align: center;
+}
+
+/* Dickens’s autobiographical novel */
+.df-t3 {
+  left: 155px;
+  top: 520px;
+  text-align: center;
+}
+
+/* Dickens’s socially critical novels */
+.df-t4 {
+  left: 370px;
+  top: 430px;
+  text-align: center;
+}
+
+/* Want sharper social criticism? */
+.df-t5 {
+  left: 650px;
+  top: 335px;
+  text-align: center;
+}
+
+/* Curious about Dickens’s unfinished mystery? */
+.df-t6 {
+  left: 830px;
+  top: 1230px;
+  text-align: center;
+}
+
+
+/* line common */
+
+.df-line {
+  position: absolute;
+  background: white;
+  z-index: 3;
+}
+
+.df-line::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+}
+
+.df-line.vertical::after {
+  right: -5px;
+  top: auto;
+  bottom: -1px;
+  transform: rotate(135deg);
+}
+
+.df-line.reverse::after {
+  left: -1px;
+  right: auto;
+  transform: rotate(-135deg);
+}
+
+.df-line.up::after {
+  right: -5px;
+  top: -1px;
+  bottom: auto;
+  transform: rotate(-45deg);
+}
+
+.df-line.no-arrow::after {
+  display: none;
+}
+
+/* line positions — 이미지 그대로의 단순 연결 */
+
+/* A Christmas Carol → Oliver Twist */
+.df-l1 {
+  left: 230px;
+  top: 150px;
+  width: 320px;
+  height: 2px;
+}
+
+/* Oliver Twist → Great Expectations */
+.df-l2 {
+  left: 730px;
+  top: 150px;
+  width: 220px;
+  height: 2px;
+}
+
+/* A Christmas Carol → David Copperfield */
+.df-l3 {
+  left: 140px;
+  top: 280px;
+  width: 2px;
+  height: 625px;
+}
+
+/* Oliver Twist → Bleak House */
+.df-l4 {
+  left: 640px;
+  top: 280px;
+  width: 2px;
+  height: 170px;
+}
+
+/* Great Expectations → A Tale of Two Cities */
+.df-l5 {
+  left: 1040px;
+  top: 280px;
+  width: 2px;
+  height: 170px;
+}
+
+/* A Tale of Two Cities → The Old Curiosity Shop */
+.df-l6 {
+  left: 1040px;
+  top: 740px;
+  width: 2px;
+  height: 160px;
+}
+
+/* The Old Curiosity Shop → lower continuation */
+.df-l7 {
+  left: 1040px;
+  top: 1190px;
+  width: 2px;
+  height: 160px;
+}
+
+/* Oliver Twist → Little Dorrit / central group 느낌용 */
+.df-l8 {
+  left: 445px;
+  top: 360px;
+  width: 2px;
+  height: 95px;
+  display: none;
+}
+
+/* Great Expectations → middle right continuation 느낌용 */
+.df-l9 {
+  left: 845px;
+  top: 360px;
+  width: 2px;
+  height: 95px;
+  display: none;
+}
+
+/* book detail overlay */
+
+.book-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.78);
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 350ms ease;
+}
+
+.book-detail-overlay.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.book-detail-panel {
+  width: min(980px, 86vw);
+  min-height: 520px;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 70px;
+  align-items: center;
+  transform: scale(0.82);
+  opacity: 0;
+  transition: transform 420ms ease, opacity 420ms ease;
+}
+
+.book-detail-overlay.active .book-detail-panel {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.book-detail-image img {
+  width: 100%;
+  max-height: 520px;
+  object-fit: contain;
+  display: block;
+  border: none;
+}
+
+.book-detail-text {
+  color: white;
+}
+
+.book-detail-text h2 {
+  font-size: clamp(38px, 5vw, 72px);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+  margin: 0 0 22px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.book-detail-meta {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.58);
+  margin-bottom: 28px;
+}
+
+.book-detail-meta span {
+  display: inline-block;
+  margin-right: 18px;
+}
+
+.book-detail-text p {
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 560px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.book-detail-trigger {
+  cursor: pointer;
+}
+
+.book-detail-trigger img {
+  transition: transform 250ms ease, filter 250ms ease;
+}
+
+.book-detail-trigger:hover img {
+  transform: scale(1.05);
+  filter: brightness(1.15);
+}
