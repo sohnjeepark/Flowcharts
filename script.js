@@ -930,6 +930,7 @@ function createFloatingBooks() {
     img.style.animationDuration = 10 + Math.random() * 12 + "s";
 
     img.addEventListener("click", () => {
+       if (!book.link) return;
       window.location.href = book.link;
     });
 
