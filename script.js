@@ -363,91 +363,91 @@ const books = [
   title: "A Grey Man",
   author: "Choi In-hun",
   image: "images/in-hun-a-grey-man.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Bridge of Heaven and Tuman River",
   author: "Choi In-hun",
   image: "images/in-hun-bridge-of-heaven-and-tuman-river.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Hwadu",
   author: "Choi In-hun",
   image: "images/in-hun-hwadu.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Literature and Ideology",
   author: "Choi In-hun",
   image: "images/in-hun-literature-and-ideology.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Long Long Time Ago, Whai-Whai",
   author: "Choi In-hun",
   image: "images/in-hun-long-long-time-ago-whai-whai.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Meditations on the Road",
   author: "Choi In-hun",
   image: "images/in-hun-meditations-on-the-road.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Reflections on a Mask and Christmas Carol",
   author: "Choi In-hun",
   image: "images/in-hun-reflections-on-a-mask-and-christmas-carol.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "Seoyugi",
   author: "Choi In-hun",
   image: "images/in-hun-seoyugi.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Daily Life of Ku-poh the Novelist",
   author: "Choi In-hun",
   image: "images/in-hun-the-daily-life-of-ku-poh-the-novelist.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Dream of Utopia",
   author: "Choi In-hun",
   image: "images/in-hun-the-dream-of-utopia.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Moon and the Boy Soldier",
   author: "Choi In-hun",
   image: "images/in-hun-the-moon-and-the-boy-soldier.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Sound of Laughter",
   author: "Choi In-hun",
   image: "images/in-hun-the-sound-of-laughter.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Square (Kuunmong)",
   author: "Choi In-hun",
   image: "images/in-hun-the-square-kuunmong.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Tempest",
   author: "Choi In-hun",
   image: "images/in-hun-the-tempest.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 {
   title: "The Voice of the Governor-General",
   author: "Choi In-hun",
   image: "images/in-hun-the-voice-of-the-governor-general.jpg",
-  link: "flowcharts/in-hun.html"
+  link: ""
 },
 
 {
@@ -515,14 +515,14 @@ const books = [
   title: "Poetry Collection",
   author: "Yi Sang",
   image: "images/yi-sang-poetry-collection.jpg",
-  link: "flowcharts/yi-sang.html"
+  link: ""
 },
 
 {
   title: "Selected Works",
   author: "Yi Sang",
   image: "images/yi-sang-selected-works.jpg",
-  link: "flowcharts/yi-sang.html"
+  link: ""
 },
 
 {
